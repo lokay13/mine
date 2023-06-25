@@ -1,0 +1,5 @@
+{% for item in inventory %}
+    <li>{{ item.ore.name }}: {{ item.amount }}</li>
+{% empty %}
+    <li>No items in the inventory</li>
+{% endfor %}
